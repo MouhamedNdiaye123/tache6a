@@ -1,0 +1,83 @@
+
+.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    font-family: 'Poopins', sans-serif;
+    border: 1px solid;
+}
+.wrapper > *{
+    flex: 1 100%;
+    padding: 10px;
+}
+
+@media all and (min-width: 770px) {
+    .body{
+        flex: 3;
+    }
+}
+@media all and (min-width: 600px) {
+    .sidebare{
+        flex: 1;
+    }
+    
+}
+@media screen and (max-width:770px) {
+    .card div:nth-child(3){
+        flex-basis: 100%;
+    }
+}
+.sidebare{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 500px;
+    background-color: rgb(41, 41, 41);
+}
+.sidebare div{
+    display: flex;
+    flex-direction: column;
+}
+.sidebare a{
+    display: inline-block;
+    text-decoration: none;
+    flex-direction: column;
+    color: white;
+    margin: 5px;
+}
+.body{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(251, 240, 255);
+}
+nav{
+    border: 1px solid;
+    text-align: right;
+}
+nav a{
+    display: inline-block;
+    color: gray;
+    padding: 15px 7px;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 100%;
+}
+.card div{
+    /* flex: 1 1 auto; */
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    background-color: rgb(98, 98, 98);
+    text-align: center;
+    padding: 15px;
+    margin-top: 5px;
+    margin-right: 5px;
+    font-size: 35px;
+    color: white;
+} 
